@@ -1,4 +1,6 @@
 collectText.onclick = async function () {
+
+    document.getElementById('cityOutput').innerHTML = "";
     const textToDisplay = await makeRequest("http://localhost:3000/api", "GET")
     
     for (let i = 0; i < textToDisplay.length; i++) {
